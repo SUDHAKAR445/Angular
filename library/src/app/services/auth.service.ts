@@ -9,12 +9,12 @@ export class AuthService {
   constructor(private router: Router) { }
 
   login(): void {
-    const userRole: string = 'LIBRARIAN';
+    const userRole: string = 'ADMIN';
     this.navigateBasedOnRole(userRole);
   }
 
   signUp(): void {
-    const userRole: string = 'LIBRARIAN';
+    const userRole: string = 'ADMIN';
     this.navigateBasedOnRole(userRole);
   }
 

@@ -1,1 +1,9 @@
-<p>admin-dashboard works!</p>
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="row">
+        <app-side-bar class="col-md-2 col-lg-1"></app-side-bar>
+        <main class="col-md-10 col-lg-11 px-md-4">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+</div>

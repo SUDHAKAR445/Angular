@@ -1,0 +1,86 @@
+.container {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-color: #060606;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #060606;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #060606;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #060606;
+}
+
+.table-sm th,
+.table-sm td {
+    padding: 0.3rem;
+}
+
+.table-bordered {
+    border: 1px solid #060606;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #060606;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+    border-bottom-width: 2px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+    background-color: #b8daff;
+}
+
+.table-hover .table-primary:hover {
+    background-color: #9fcdff;
+}
+
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+    background-color: #9fcdff;
+}
+
+.fa-edit,
+.fa-trash {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.fa-edit {
+    color: #007bff;
+}
+
+.fa-trash {
+    color: #e70606;
+}
+
+h1 {
+    font-weight: bold;
+}
