@@ -1,0 +1,25 @@
+@import 'bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto+Mono:ital,wght@0,300;1,300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+header {
+    font-family: 'Concert One', cursive;
+}
+
+a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #28282B;
+    cursor: pointer;
+}

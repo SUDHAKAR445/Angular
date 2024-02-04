@@ -1,0 +1,48 @@
+<div class="ekart-product-container">
+    <app-search (searchTextChanged)="setSearchText($event)"></app-search>
+    <product-list [searchText]="searchText" #productListComponent></product-list>
+    <product-detail *ngIf="productListComponent.selectedProduct" [productListComp]="productListComponent"></product-detail>
+
+    <div class="ekart-featured-products">
+        <div class="ekart-featured-product-heading">
+            <h1>Latest Arrival in Popular Brands</h1>
+        </div>
+        <featured-brands>
+            <h3 class="title">New Arrivals in Nike</h3>
+            <button class="call-to-action">Show New Arrivals in Nike</button>
+        </featured-brands>
+        <featured-brands>
+            <h3 class="title">New Arrivals in Adidas</h3>
+            <button class="call-to-action">Show New Arrivals in Adidas</button>
+        </featured-brands>
+        <featured-brands>
+            <h3 class="title">New Arrivals in Reebok</h3>
+            <button class="call-to-action">Show New Arrivals in Reebok</button>
+        </featured-brands>
+    </div>
+
+    <!-- <div *ngFor="let item of listOfString">
+        <p>Current element of an array is {{ item }}</p>
+    </div> -->
+
+
+    <!-- property binding symbol [] -->
+    <!-- <img [src]="product.pImage"> -->
+    <!-- <img src={{product.pImage}}> -->
+    <!-- String interpolation -->
+    <!-- <p>Name: {{ product.name }}</p>
+    <p>Price: {{ '$' + product.price }}</p>
+    <p>Color: {{ product.color }}</p>
+    <p>Discounted Price: {{ '$' + getDiscountedPrice().toFixed(2) }}</p>
+    <p> {{ product.stock > 0 ? 'Only ' + product.stock + ' items left': 'Not in stock' }}</p>
+    <button (click)="decrementCartValue()" [disabled]="!(addToCart>0)">-</button>
+    <span>{{ addToCart }}</span>
+    <button (click)="incrementCartValue()" [disabled]="addToCart>=product.stock">+</button> -->
+    <!-- Property binding -->
+    <!-- <button [disabled]="!(product.stock > 0)">Buy Now</button> -->
+    <!-- [value] === bind-value -->
+    <!-- event binding -->
+    <!-- <input [value]="name" "><br> -->
+    <!-- <input (input)="onNameChange($event)"><br>
+    <p> name={{ name }}</p> -->
+</div>

@@ -1,0 +1,17 @@
+.home-content {
+    height: 100vh;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-VS9-TWDQeBmgHuDTOZLjff3uDzr825Pt1bbvCwSqWMJI6pF2zj9_tCI1wxDrFMZq6Q8&usqp=CAU'); // Adjust the path accordingly
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+
+    h2,
+    p {
+        margin: 10px;
+    }
+}
